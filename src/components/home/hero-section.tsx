@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { cn } from "@/lib/utils";
-import { Boxes } from "@/components/ui/background-boxes";
+import { ColourfulText } from "@/components/ui/colourful-text";
 
 export default function Hero() {
   return (
@@ -20,7 +20,8 @@ export default function Hero() {
           Shiv Baran Singh
         </p>
         <p className="text-center pt-4 relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-2xl font-bold text-transparent sm:text-2xl">
-          Frontend Developer | React.js | Next.js | Tailwind CSS
+          <ColourfulText text="Frontend Developer" /> | React.js | Next.js |
+          Vue.js
         </p>
         <p className="pt-4 text-center relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-xl font-bold text-transparent sm:text-xl">
           Frontend developer with 8+ years of experience in Vue 3, React, and
