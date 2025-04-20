@@ -13,11 +13,11 @@ const skills = {
     },
     {
       name: "Reactjs",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg"
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
     },
     {
       name: "Vuejs",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original-wordmark.svg"
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg"
     },
     {
       name: "Nextjs",
@@ -39,7 +39,7 @@ const skills = {
     },
     {
       name: "Express",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg"
+      icon: "https://expressjs.com/images/brand/logotype-dark.svg"
     },
     {
       name: "Python",
@@ -57,11 +57,11 @@ const skills = {
   DevOps: [
     {
       name: "Docker",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg"
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
     },
     {
       name: "Kubernetes",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain-wordmark.svg"
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg"
     },
     {
       name: "Jenkins",
@@ -79,19 +79,19 @@ const skills = {
   Databases: [
     {
       name: "MongoDB",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg"
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
     },
     {
       name: "PostgreSQL",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg"
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
     },
     {
       name: "MySQL",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
     },
     {
       name: "Redis",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original-wordmark.svg"
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg"
     },
     {
       name: "SQLite",
@@ -134,11 +134,14 @@ export default function Skills() {
   return (
     <BackgroundBeamsWithCollision>
       <div className="py-20">
+        <p className="text-center py-4 my-10 relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-4xl font-bold text-transparent sm:text-4xl">
+          Skills
+        </p>
         {Object.entries(skills).map(([category, items]) => (
           <div key={category} className="mb-12">
-            <h2 className="text-3xl text-white font-bold mb-6 text-center">
+            <h3 className="text-xl text-white font-bold mb-6 text-center">
               {category}
-            </h2>
+            </h3>
             <div className="flex flex-wrap items-center justify-center gap-8">
               {items.map((skill) => (
                 <GlareCard
@@ -148,9 +151,9 @@ export default function Skills() {
                   <img
                     src={skill.icon}
                     alt={skill.name}
-                    className="h-24 w-24"
+                    className="h-12 w-12"
                   />
-                  <p className="text-white font-bold text-xl mt-4">
+                  <p className="text-white font-bold text-md mt-4">
                     {skill.name}
                   </p>
                 </GlareCard>
