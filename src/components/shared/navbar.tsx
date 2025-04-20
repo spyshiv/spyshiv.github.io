@@ -41,7 +41,13 @@ export function NavbarMenu() {
         <NavbarLogo path="./../logo.svg" name="Shiv Baran Singh" />
         <NavItems items={navItems} />
         <div className="flex items-center gap-4">
-          <NavbarButton variant="primary">Resume</NavbarButton>
+          <NavbarButton
+            variant="primary"
+            href="./../shiv-resume-2025.pdf"
+            target="_blank"
+          >
+            Resume
+          </NavbarButton>
         </div>
       </NavBody>
 
