@@ -8,11 +8,9 @@ import { Dock } from "@/components/shared/dock";
 export default function Home() {
   return (
     <>
-      <NavbarMenu />
       <Hero />
       <About />
       <Projects />
-      <Dock />
     </>
   );
 }
