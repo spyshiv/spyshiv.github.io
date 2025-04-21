@@ -38,10 +38,6 @@ const skills = {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
     },
     {
-      name: "Express",
-      icon: "https://expressjs.com/images/brand/logotype-dark.svg"
-    },
-    {
       name: "Python",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
     },
@@ -50,8 +46,12 @@ const skills = {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/djangorest/djangorest-original.svg"
     },
     {
-      name: "GraphQL",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg"
+      name: "MongoDB",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+    },
+    {
+      name: "PostgreSQL",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
     }
   ],
   DevOps: [
@@ -74,28 +74,6 @@ const skills = {
     {
       name: "AWS",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
-    }
-  ],
-  Databases: [
-    {
-      name: "MongoDB",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
-    },
-    {
-      name: "PostgreSQL",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
-    },
-    {
-      name: "MySQL",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
-    },
-    {
-      name: "Redis",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg"
-    },
-    {
-      name: "SQLite",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg"
     }
   ],
   Tools: [
@@ -132,7 +110,7 @@ const skills = {
 
 export default function Skills() {
   return (
-    <BackgroundBeamsWithCollision>
+    <BackgroundBeamsWithCollision className="h-[80rem]">
       <div className="py-20">
         <p className="text-center py-4 my-10 relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-4xl font-bold text-transparent sm:text-4xl">
           Skills
