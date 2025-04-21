@@ -151,7 +151,7 @@ export default function Skills() {
                   <img
                     src={skill.icon}
                     alt={skill.name}
-                    className="h-12 w-12"
+                    className="h-10 w-10"
                   />
                   <p className="text-white font-bold text-md mt-4">
                     {skill.name}

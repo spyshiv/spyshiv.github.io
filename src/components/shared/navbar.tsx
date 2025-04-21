@@ -77,9 +77,9 @@ export function NavbarMenu() {
           ))}
           <div className="flex w-full flex-col gap-4">
             <NavbarButton
-              onClick={() => setIsMobileMenuOpen(false)}
               variant="primary"
-              className="w-full"
+              href="./../shiv-resume-2025.pdf"
+              target="_blank"
             >
               Resume
             </NavbarButton>
