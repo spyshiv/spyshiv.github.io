@@ -24,10 +24,12 @@ export function LampDemo() {
 
 export const LampContainer = ({
   children,
-  className
+  className,
+  title
 }: {
   children: React.ReactNode;
   className?: string;
+  title?: string;
 }) => {
   return (
     <div
@@ -36,6 +38,9 @@ export const LampContainer = ({
         className
       )}
     >
+      <p className="text-center py-4 my-10 relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-4xl font-bold text-transparent sm:text-4xl">
+        {title}
+      </p>
       <div className="relative flex w-full flex-1 scale-y-125 items-center justify-center isolate z-0 ">
         <motion.div
           initial={{ opacity: 0.5, width: "15rem" }}

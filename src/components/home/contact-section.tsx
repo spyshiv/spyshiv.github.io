@@ -129,7 +129,7 @@ export default function Contact() {
 
   return (
     <div className="h-[50rem] flex flex-col items-center justify-center">
-      <LampContainer>
+      <LampContainer title="Contact Me">
         <motion.h1
           initial={{ opacity: 0.5, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -139,11 +139,7 @@ export default function Contact() {
             ease: "easeInOut"
           }}
           className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
-        >
-          <p className="text-center py-4 relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-4xl font-bold text-transparent sm:text-4xl">
-            Contact Me
-          </p>
-        </motion.h1>
+        ></motion.h1>
         <div className="flex gap-4 my-8">
           <button className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm">
             <a href="mailto:spyshiv@gmail.com">spyshiv@gmail.com</a>
