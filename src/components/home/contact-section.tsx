@@ -3,10 +3,16 @@ import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 import React, { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import { LampContainer } from "@/components/ui/lamp-container";
-import { CONTACT_WORDS_SET } from "@/config/home";
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
+import {
+  CONTACT_WORDS_SET,
+  INFINITE_MOVING_CARDS_MAP,
+  INFINITE_MOVING_CARDS_MAP_2
+} from "@/config/home";
 
 export default function Contact() {
   const wordSets = CONTACT_WORDS_SET;
+  const testimonials = INFINITE_MOVING_CARDS_MAP_2;
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -18,8 +24,8 @@ export default function Contact() {
   }, []);
 
   return (
-    <div className="h-[50rem] flex flex-col items-center justify-center">
-      <LampContainer title="Contact Me">
+    <>
+      <LampContainer>
         <motion.h1
           initial={{ opacity: 0.5, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -28,8 +34,13 @@ export default function Contact() {
             duration: 0.8,
             ease: "easeInOut"
           }}
-          className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
-        ></motion.h1>
+          className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-2xl font-medium tracking-tight text-transparent md:text-3xl"
+        >
+          Lets Work Together
+        </motion.h1>
+        <p className="text-center py-4 my-10 relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-4xl font-bold text-transparent sm:text-4xl">
+          Contact Me
+        </p>
         <div className="flex gap-4 my-8">
           <button className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm">
             <a href="mailto:spyshiv@gmail.com">spyshiv@gmail.com</a>
@@ -40,6 +51,8 @@ export default function Contact() {
             </a>
           </button>
         </div>
+      </LampContainer>
+      <div className="h-[30rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
         {wordSets.map((words, index) => (
           <div
             key={index}
@@ -51,7 +64,12 @@ export default function Contact() {
             />
           </div>
         ))}
-      </LampContainer>
-    </div>
+        <InfiniteMovingCards
+          items={testimonials}
+          direction="right"
+          speed="slow"
+        />
+      </div>
+    </>
   );
 }
