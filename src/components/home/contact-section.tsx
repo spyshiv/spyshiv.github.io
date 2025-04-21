@@ -8,116 +8,113 @@ export default function Contact() {
   const wordSets = [
     [
       { text: "I" },
-      { text: "develop", className: "text-blue-500 dark:text-blue-500" },
-      { text: "scalable" },
+      { text: "craft", className: "text-blue-500 dark:text-blue-500" },
+      { text: "user-friendly" },
       { text: "web" },
-      { text: "apps" },
+      { text: "interfaces" },
       { text: "using" },
       { text: "modern", className: "text-cyan-500 dark:text-cyan-500" },
-      { text: "JavaScript." }
+      { text: "JS" },
+      { text: "frameworks." }
     ],
     [
       { text: "I" },
-      { text: "design", className: "text-purple-500 dark:text-purple-500" },
+      { text: "build", className: "text-purple-500 dark:text-purple-500" },
       { text: "reusable" },
-      { text: "components", className: "text-pink-500 dark:text-pink-500" },
-      { text: "and" },
-      { text: "consistent" },
-      { text: "UI" }
+      { text: "UI", className: "text-pink-500 dark:text-pink-500" },
+      { text: "components" },
+      { text: "with" },
+      { text: "scalable" },
+      { text: "Design" },
+      { text: "System." }
     ],
     [
       { text: "I" },
       { text: "focus" },
       { text: "on" },
       {
-        text: "performance",
+        text: "optimizing",
         className: "text-orange-500 dark:text-orange-500"
       },
-      { text: "using" },
+      { text: "frontend" },
       {
-        text: "code-splitting",
+        text: "performance",
         className: "text-yellow-500 dark:text-yellow-500"
-      },
-      { text: "and" },
-      { text: "tree-shaking." }
-    ],
-    [
-      { text: "I" },
-      { text: "architect", className: "text-indigo-500 dark:text-indigo-500" },
-      {
-        text: "micro-frontends",
-        className: "text-emerald-500 dark:text-emerald-500"
       },
       { text: "for" },
-      { text: "modular" },
-      { text: "teams." }
+      { text: "speed/scale." }
     ],
     [
       { text: "I" },
-      { text: "build", className: "text-blue-500 dark:text-blue-500" },
-      { text: "interactive" },
-      { text: "charts", className: "text-lime-500 dark:text-lime-500" },
-      { text: "and" },
-      { text: "visualizations" },
+      { text: "write", className: "text-purple-500 dark:text-purple-500" },
+      { text: "comprehensive" },
+      { text: "unit," },
+      { text: "integration," },
+      { text: "&" },
+      { text: "E2E tests." }
+    ],
+    [
+      { text: "I" },
+      { text: "integrate", className: "text-blue-500 dark:text-blue-500" },
       { text: "with" },
-      { text: "D3", className: "text-red-500 dark:text-red-500" },
-      { text: "and" },
-      { text: "Highcharts." }
+      { text: "backend" },
+      { text: "APIs" },
+      { text: "for" },
+      { text: "dynamic" },
+      { text: "user" },
+      { text: "experiences." }
     ],
     [
       { text: "I" },
+      { text: "ensure", className: "text-yellow-500 dark:text-yellow-500" },
+      { text: "cross-browser" },
+      { text: "&" },
       {
-        text: "implement",
-        className: "text-pink-500 dark:text-pink-500"
+        text: "responsive",
+        className: "text-lime-500 dark:text-lime-500"
       },
-      { text: "secure" },
-      {
-        text: "authentication",
-        className: "text-yellow-500 dark:text-yellow-500"
-      },
-      { text: "flows" },
-      { text: "using" },
-      { text: "JWT" },
-      { text: "and" },
-      { text: "OAuth." }
-    ],
-    [
-      { text: "I" },
-      { text: "automate", className: "text-purple-500 dark:text-purple-500" },
-      { text: "builds" },
-      { text: "and" },
-      { text: "deployments", className: "text-teal-500 dark:text-teal-500" },
-      { text: "via" },
-      { text: "CI/CD", className: "text-fuchsia-500 dark:text-fuchsia-500" }
-    ],
-    [
-      { text: "I" },
-      { text: "contribute", className: "text-green-500 dark:text-green-500" },
-      { text: "to" },
-      { text: "open-source", className: "text-blue-400 dark:text-blue-400" },
-      { text: "and" },
-      { text: "mentor", className: "text-rose-500 dark:text-rose-500" },
-      { text: "developers." }
+      { text: "design" },
+      { text: "across" },
+      { text: "devices." }
     ],
     [
       { text: "I" },
       { text: "manage", className: "text-indigo-500 dark:text-indigo-500" },
-      { text: "cloud" },
-      { text: "infrastructure", className: "text-gray-500 dark:text-gray-400" },
-      { text: "and" },
-      { text: "Dockerized" },
-      { text: "environments." }
+      { text: "&" },
+      { text: "optimize" },
+      { text: "workflows" },
+      { text: "for" },
+      { text: "CI/CD" },
+      { text: "pipelines." }
     ],
     [
       { text: "I" },
-      { text: "collaborate", className: "text-cyan-600 dark:text-cyan-600" },
+      { text: "expertly", className: "text-teal-500 dark:text-teal-500" },
+      { text: "handle" },
+      { text: "`npm publish`" },
+      { text: "for" },
+      { text: "package" },
+      { text: "distribution." }
+    ],
+    [
+      { text: "I" },
+      { text: "explore", className: "text-emerald-500 dark:text-emerald-500" },
+      { text: "&" },
+      { text: "experiment" },
       { text: "with" },
-      { text: "designers" },
-      { text: "and" },
-      { text: "PMs" },
-      { text: "to" },
-      { text: "enhance", className: "text-pink-600 dark:text-pink-600" },
-      { text: "UX." }
+      {
+        text: "generative AI.",
+        className: "text-fuchsia-500 dark:text-fuchsia-500"
+      }
+    ],
+    [
+      { text: "I" },
+      { text: "troubleshoot", className: "text-red-500 dark:text-red-500" },
+      { text: "&" },
+      { text: "resolve" },
+      { text: "frontend" },
+      { text: "issues" },
+      { text: "efficiently." }
     ]
   ];
 

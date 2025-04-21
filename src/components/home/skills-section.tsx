@@ -139,7 +139,7 @@ export default function Skills() {
         </p>
         {Object.entries(skills).map(([category, items]) => (
           <div key={category} className="mb-12">
-            <h3 className="text-xl text-white font-bold mb-6 text-center">
+            <h3 className="text-xl dark:text-white text-black font-bold mb-6 text-center">
               {category}
             </h3>
             <div className="flex flex-wrap items-center justify-center gap-8">

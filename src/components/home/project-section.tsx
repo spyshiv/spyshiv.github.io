@@ -12,39 +12,39 @@ export default function Projects() {
 }
 export const projects = [
   {
-    title: "Stripe",
+    title: "Podcast AI",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
-    link: "https://stripe.com"
+      "a Node.js package that leverages Google's Gemini GenAI to automatically generate podcast-style scripts with multiple characters. By providing a title, description, and desired duration",
+    link: "https://www.npmjs.com/package/podcast-ai"
   },
   {
-    title: "Netflix",
+    title: "Gemini GenAI",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://netflix.com"
+      "A TypeScript based npm package providing a type-safe interface for integrating Google Gemini API text generation into React, Vue, Angular, and other JavaScript Projects",
+    link: "https://www.npmjs.com/package/gemini-genai"
   },
   {
-    title: "Google",
+    title: "HuexJs",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
-    link: "https://google.com"
+      "huexjs is a lightweight and efficient TypeScript library for seamless color conversions. Easily convert colors between HEX, RGB, HSL, CMYK, and HSV with precision.",
+    link: "https://www.npmjs.com/package/huexjs"
   },
   {
-    title: "Meta",
+    title: "DummyTextJs",
     description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    link: "https://meta.com"
+      "dummytextjs is a lightweight utility for generating realistic dummy text (words, sentences, or paragraphs) for development and testing.",
+    link: "https://www.npmjs.com/package/dummytextjs"
   },
   {
-    title: "Amazon",
+    title: "Google Login Vue3",
     description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-    link: "https://amazon.com"
+      "A lightweight and customizable Vue 3 component for Google OAuth 2.0 authentication supporting both JWT-based and Authorization Code-based flows.",
+    link: "https://www.npmjs.com/package/google-login-vue3"
   },
   {
-    title: "Microsoft",
+    title: "Google Recaptcha Vue3",
     description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    link: "https://microsoft.com"
+      "A lightweight Vue 3 component library supporting Google reCAPTCHA v2 and v3 integration.",
+    link: "https://www.npmjs.com/package/google-recaptcha-vue3"
   }
 ];
