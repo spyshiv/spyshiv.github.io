@@ -1,5 +1,7 @@
 "use client";
 import CardDemo from "@/components/ui/card-with-move-animation";
+import { PROJECT_LIST } from "@/config/home";
+const projects = PROJECT_LIST;
 
 export default function TracingBeamDemo() {
   return (
@@ -8,18 +10,13 @@ export default function TracingBeamDemo() {
         Projects
       </h2>
       <div className="flex flex-wrap justify-center gap-4 px-10">
-        <CardDemo
-          title="Damn good card"
-          description="A card that showcases a set of tools that you use to create your
-        product."
-        />
-        <CardDemo title="Damn good card" />
-        <CardDemo title="Damn good card" />
-        <CardDemo title="Damn good card" />
-        <CardDemo title="Damn good card" />
-        <CardDemo title="Damn good card" />
-        <CardDemo title="Damn good card" />
-        <CardDemo title="Damn good card" />
+        {projects.map((project) => (
+          <CardDemo
+            key={project.title}
+            title={project.title}
+            description={project.description}
+          />
+        ))}
       </div>
     </div>
   );

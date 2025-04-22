@@ -1,3 +1,79 @@
+import { desc } from "motion/react-client";
+
+export const PROJECT_LIST = [
+  {
+    title: "Podcast AI",
+    description:
+      "a Node.js package that leverages Google's Gemini GenAI to automatically generate podcast-style scripts with multiple characters. By providing a title, description, and desired duration",
+    link: "https://www.npmjs.com/package/podcast-ai"
+  },
+  {
+    title: "Gemini GenAI",
+    description:
+      "A TypeScript based npm package providing a type-safe interface for integrating Google Gemini API text generation into React, Vue, Angular, and other JavaScript Projects",
+    link: "https://www.npmjs.com/package/gemini-genai"
+  },
+  {
+    title: "HuexJs",
+    description:
+      "huexjs is a lightweight and efficient TypeScript library for seamless color conversions. Easily convert colors between HEX, RGB, HSL, CMYK, and HSV with precision.",
+    link: "https://www.npmjs.com/package/huexjs"
+  },
+  {
+    title: "DummyTextJs",
+    description:
+      "dummytextjs is a lightweight utility for generating realistic dummy text (words, sentences, or paragraphs) for development and testing.",
+    link: "https://www.npmjs.com/package/dummytextjs"
+  },
+  {
+    title: "Google Login Vue3",
+    description:
+      "A lightweight and customizable Vue 3 component for Google OAuth 2.0 authentication supporting both JWT-based and Authorization Code-based flows.",
+    link: "https://www.npmjs.com/package/google-login-vue3"
+  },
+  {
+    title: "Google Recaptcha Vue3",
+    description:
+      "A lightweight Vue 3 component library supporting Google reCAPTCHA v2 and v3 integration.",
+    link: "https://www.npmjs.com/package/google-recaptcha-vue3"
+  },
+  {
+    title: "Collaborate(CSAP)",
+    description:
+      "Cyware Collaborate enables real-time threat intelligence sharing, breaking silos for improved detection, response, and cyber defense coordination.",
+    link: "https://www.cyware.com/products/collaborate"
+  },
+  {
+    title: "Intel Exchange(CTIX)",
+    description:
+      "Cyware Intel Exchange automates threat intelligence sharing, enrichment, correlation, and response across security tools.",
+    link: "https://www.cyware.com/products/intel-exchange"
+  },
+  {
+    title: "EvalAI",
+    description:
+      "EvalAI is an open-source platform for managing and hosting AI challenges, providing a collaborative environment for researchers and developers.",
+    link: "https://eval.ai/"
+  },
+  {
+    title: "Swinguff",
+    description:
+      "Swinguff is a social music app allowing users to share songs, like statuses, and connect with friends.",
+    link: "http://goo.gl/9B8ZFA"
+  },
+  {
+    title: "Color Palette Generator",
+    description:
+      "A web application that generates color palettes based on user input, allowing users to create and save their own color combinations."
+  },
+  {
+    title: "Price Time Wave",
+    description:
+      "A stock market analysis tool that provides real-time data and insights for traders and investors.",
+    link: "https://pricetimewave.com/"
+  }
+];
+
 export const CONTACT_WORDS_SET = [
   [
     { text: "I" },
