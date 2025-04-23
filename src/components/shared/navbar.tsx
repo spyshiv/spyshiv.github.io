@@ -19,8 +19,8 @@ export function NavbarMenu() {
       link: "/"
     },
     {
-      name: "About",
-      link: "/about"
+      name: "Experience",
+      link: "/experience"
     },
     {
       name: "Projects",
