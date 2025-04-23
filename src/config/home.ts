@@ -2,19 +2,19 @@ export const PROJECT_LIST = [
   {
     title: "Podcast AI",
     description:
-      "a Node.js package that leverages Google's Gemini GenAI to automatically generate podcast-style scripts with multiple characters. By providing a title, description, and desired duration",
+      "A Node.js package leveraging Google's Gemini GenAI to automate podcast script generation. Simply provide a title, description, and duration to receive multi-character scripts.",
     link: "https://www.npmjs.com/package/podcast-ai"
   },
   {
     title: "Gemini GenAI",
     description:
-      "A TypeScript based npm package providing a type-safe interface for integrating Google Gemini API text generation into React, Vue, Angular, and other JavaScript Projects",
+      "A TypeScript-based npm package offering a type-safe and simplified interface for integrating the Google Gemini API into React, Vue, Angular, and other JS/TS projects.",
     link: "https://www.npmjs.com/package/gemini-genai"
   },
   {
     title: "HuexJs",
     description:
-      "huexjs is a lightweight and efficient TypeScript library for seamless color conversions. Easily convert colors between HEX, RGB, HSL, CMYK, and HSV with precision.",
+      "A lightweight and efficient TypeScript library (huexjs) for seamless and precise color conversions between formats like HEX, RGB, HSL, CMYK, and HSV.",
     link: "https://www.npmjs.com/package/huexjs"
   },
   {

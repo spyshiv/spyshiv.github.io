@@ -33,10 +33,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       ref={containerRef}
     >
       <div className="max-w-7xl mx-auto mt-10 pt-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-bold text-5xl mb-4 text-black dark:text-white max-w-full text-center">
+        <p className="text-center py-4 relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-4xl font-bold text-transparent sm:text-4xl">
           Career Highlights
-        </h2>
-        <p className="text-xl text-neutral-700 dark:text-neutral-300 max-w-full">
+        </p>
+        <p className="max-w-7xl pt-4 text-center relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-xl font-bold text-transparent sm:text-xl">
           A glimpse into my journey as a frontend specialist — from architecting
           scalable micro-frontends to building robust component libraries in Vue
           3 and React. Over the past 8+ years, I've led UI revamps, designed

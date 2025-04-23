@@ -8,14 +8,12 @@ export default function Projects() {
       <p className="text-center py-4 relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-4xl font-bold text-transparent sm:text-4xl">
         Projects
       </p>
-      <p className="text-xl font-bold text-center">
-        I'm a passionate web developer with a focus on creating engaging and
-        functional user experiences. My projects demonstrate my skills in
-        front-end technologies like React, Next.js, and Tailwind CSS to build
-        responsive and visually appealing websites. I also have experience in
-        back-end development and deployment, as seen in my full-stack
-        applications. I enjoy tackling challenging problems and continuously
-        learning new technologies to deliver innovative web solutions.
+      <p className="pt-4 text-center relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-xl font-bold text-transparent sm:text-xl">
+        Driven by a passion for creating innovative web experiences, I've built
+        a variety of projects showcased below. These demonstrate my hands-on
+        experience with modern frontend frameworks (React, Next.js, Vue.js), my
+        commitment to best practices like design systems and performance, and my
+        ability to deliver impactful web solutions.
       </p>
       <HoverEffect items={projects} />
       <div className="text-center">

@@ -24,12 +24,14 @@ export default function Hero() {
           Vue.js | Node.js
         </p>
         <p className="pt-4 text-center relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-xl font-bold text-transparent sm:text-xl">
-          Frontend developer with 8+ years of experience in Vue 3, React, and
-          TypeScript, focused on building scalable, high-performance web apps.
-          Skilled in micro-frontends, design systems, and UI libraries.
-          Proficient in Vite, Webpack, and performance tuning. Contributor to
-          open source and mentor in Google Summer of Code. Strong in
-          authentication, API integration, and CI/CD workflows.
+          As a seasoned Frontend Developer with over 8 years of experience, I
+          create scalable and high-performance web applications using
+          technologies such as React.js, Next.js, Vue.js, and Node.js. My
+          expertise spans developing intricate micro-frontends, building and
+          utilizing robust design systems, optimizing application performance,
+          and implementing efficient CI/CD practices. I actively explore
+          innovative approaches, including the potential of Generative AI in
+          frontend development.
           <a href="./../shiv-resume-2025.pdf" target="_blank">
             <button className="mt-10 relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
               <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
