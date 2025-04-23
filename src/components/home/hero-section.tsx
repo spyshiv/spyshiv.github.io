@@ -32,6 +32,8 @@ export default function Hero() {
           and implementing efficient CI/CD practices. I actively explore
           innovative approaches, including the potential of Generative AI in
           frontend development.
+        </p>
+        <div className="text-center">
           <a href="./../shiv-resume-2025.pdf" target="_blank">
             <button className="mt-10 relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
               <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
@@ -40,7 +42,7 @@ export default function Hero() {
               </span>
             </button>
           </a>
-        </p>
+        </div>
       </div>
     </div>
   );
