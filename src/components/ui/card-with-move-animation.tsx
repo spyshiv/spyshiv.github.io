@@ -6,18 +6,25 @@ import { cn } from "@/lib/utils";
 export default function Card({
   title,
   description,
-  link
+  link,
+  images
 }: {
   title: string;
   description?: string;
   link?: React.ReactNode;
+  images?: Array<{
+    src: string;
+    alt: string;
+    containerClassName?: string;
+    className?: string;
+  }>;
 }) {
   return (
     <CardLayout>
       <CardTitle>{title}</CardTitle>
       <CardDescription>{description}</CardDescription>
       <CardSkeletonContainer>
-        <Skeleton />
+        {images && <Skeleton images={images} />}
       </CardSkeletonContainer>
       {link}
     </CardLayout>
@@ -81,7 +88,16 @@ export const CardDescription = ({
   );
 };
 
-const Skeleton = () => {
+const Skeleton = ({
+  images
+}: {
+  images: Array<{
+    src: string;
+    alt: string;
+    containerClassName?: string;
+    className?: string;
+  }>;
+}) => {
   const scale = [1, 1.1, 1];
   const transform = ["translateY(0px)", "translateY(-4px)", "translateY(0px)"];
   const sequence = [
@@ -136,14 +152,19 @@ const Skeleton = () => {
   return (
     <div className="p-8 overflow-hidden h-full relative flex items-center justify-center">
       <div className="flex flex-row shrink-0 justify-center items-center gap-2">
-        <Container className="h-8 w-8 circle-1">
+        {images.map((image, index) => (
+          <Container key={index} className={image.containerClassName}>
+            <img src={image.src} alt={image.alt} className={image.className} />
+          </Container>
+        ))}
+        {/* <Container className="h-8 w-8 circle-1">
           <img
             src="/skills/gemini.svg"
             alt="Anthropic Logo"
             className="h-4 w-4"
           />
-        </Container>
-        <Container className="h-12 w-12 circle-2">
+        </Container> */}
+        {/* <Container className="h-12 w-12 circle-2">
           <img
             src="/skills/gemini.svg"
             alt="Anthropic Logo"
@@ -170,7 +191,7 @@ const Skeleton = () => {
             alt="Anthropic Logo"
             className="h-4 w-4"
           />
-        </Container>
+        </Container> */}
       </div>
 
       <div className="h-40 w-px absolute top-20 m-auto z-40 bg-gradient-to-b from-transparent via-cyan-500 to-transparent animate-move">

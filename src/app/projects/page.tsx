@@ -23,6 +23,7 @@ export default function Projects() {
             key={project.title}
             title={project.title}
             description={project.description}
+            images={project.images}
             link={ProjectLink(project.link)}
           />
         ))}
