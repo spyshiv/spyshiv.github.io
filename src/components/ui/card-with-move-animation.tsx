@@ -3,7 +3,7 @@ import { animate, motion } from "motion/react";
 import React, { useEffect } from "react";
 import { cn } from "@/lib/utils";
 
-export default function CardDemo({
+export default function Card({
   title,
   description,
   link
@@ -13,18 +13,18 @@ export default function CardDemo({
   link?: React.ReactNode;
 }) {
   return (
-    <Card>
+    <CardLayout>
       <CardTitle>{title}</CardTitle>
       <CardDescription>{description}</CardDescription>
       <CardSkeletonContainer>
         <Skeleton />
       </CardSkeletonContainer>
       {link}
-    </Card>
+    </CardLayout>
   );
 }
 
-export const Card = ({
+export const CardLayout = ({
   className,
   children
 }: {
@@ -34,7 +34,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "flex flex-col justify-between w-[20rem] mx-auto p-8 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] group",
+        "flex flex-col justify-between w-[20rem] mx-auto p-5 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] group",
         className
       )}
     >
@@ -53,7 +53,7 @@ export const CardTitle = ({
   return (
     <h3
       className={cn(
-        "text-lg font-semibold text-gray-800 dark:text-white py-2",
+        "text-lg text-center font-semibold text-gray-800 dark:text-white py-2",
         className
       )}
     >
@@ -72,7 +72,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "text-sm font-normal text-neutral-600 dark:text-neutral-400 max-w-sm",
+        "text-md text-center font-normal text-neutral-600 dark:text-neutral-400 max-w-sm",
         className
       )}
     >
