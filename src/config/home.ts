@@ -62,7 +62,8 @@ export const PROJECT_LIST = [
   {
     title: "Color Palette Generator",
     description:
-      "A web application that generates color palettes based on user input, allowing users to create and save their own color combinations."
+      "A web application that generates color palettes based on user input, allowing users to create and save their own color combinations.",
+    link: "https://color-palette-generator.vercel.app/"
   },
   {
     title: "Price Time Wave",
