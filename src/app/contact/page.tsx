@@ -17,17 +17,17 @@ const socialLinks = [
     )
   },
   {
-    name: "LeetCode",
-    url: "https://leetcode.com/spyshiv",
-    icon: (
-      <IconBrandLeetcode className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    )
-  },
-  {
     name: "GitHub",
     url: "https://github.com/spyshiv",
     icon: (
       <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    )
+  },
+  {
+    name: "LeetCode",
+    url: "https://leetcode.com/spyshiv",
+    icon: (
+      <IconBrandLeetcode className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     )
   },
   {
