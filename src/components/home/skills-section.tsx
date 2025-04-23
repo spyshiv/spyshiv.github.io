@@ -32,7 +32,7 @@ const skills = {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
     }
   ],
-  Backend: [
+  "Backend & DevOps": [
     {
       name: "Nodejs",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
@@ -46,34 +46,20 @@ const skills = {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/djangorest/djangorest-original.svg"
     },
     {
-      name: "MongoDB",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
-    },
-    {
       name: "PostgreSQL",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
-    }
-  ],
-  DevOps: [
+    },
+    {
+      name: "AWS",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+    },
     {
       name: "Docker",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
     },
     {
-      name: "Kubernetes",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg"
-    },
-    {
       name: "Jenkins",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg"
-    },
-    {
-      name: "Nginx",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg"
-    },
-    {
-      name: "AWS",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
     }
   ],
   Tools: [
@@ -90,8 +76,8 @@ const skills = {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
     },
     {
-      name: "Rollup",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rollup/rollup-original.svg"
+      name: "Nginx",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg"
     },
     {
       name: "Jira",
@@ -110,14 +96,14 @@ const skills = {
 
 export default function Skills() {
   return (
-    <BackgroundBeamsWithCollision className="h-[80rem]">
+    <BackgroundBeamsWithCollision className="h-[60rem]">
       <div className="py-20">
         <p className="text-center py-4 my-10 relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-4xl font-bold text-transparent sm:text-4xl">
           Skills
         </p>
         {Object.entries(skills).map(([category, items]) => (
           <div key={category} className="mb-12">
-            <h3 className="text-xl dark:text-white text-black font-bold mb-6 text-center">
+            <h3 className="text-xl dark:text-white text-black font-bold mb-6 text-center underline decoration-blue-500 decoration-2 underline-offset-10">
               {category}
             </h3>
             <div className="flex flex-wrap items-center justify-center gap-8">
