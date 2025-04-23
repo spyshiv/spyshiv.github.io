@@ -2,15 +2,11 @@
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 import React, { useState, useEffect } from "react";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
-import {
-  CONTACT_WORDS_SET,
-  INFINITE_MOVING_CARDS_MAP,
-  INFINITE_MOVING_CARDS_MAP_2
-} from "@/config/home";
+import { CONTACT_WORDS_SET, INFINITE_MOVING_CARDS_MAP } from "@/config/home";
 
 export default function Contact() {
   const wordSets = CONTACT_WORDS_SET;
-  const testimonials = INFINITE_MOVING_CARDS_MAP_2;
+  const testimonials = INFINITE_MOVING_CARDS_MAP;
 
   const [currentIndex, setCurrentIndex] = useState(0);
 

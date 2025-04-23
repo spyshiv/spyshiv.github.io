@@ -1,33 +1,10 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import {
-  TextRevealCard,
-  TextRevealCardDescription,
-  TextRevealCardTitle
-} from "@/components/ui/text-reveal-card";
-import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
+import React from "react";
+import { TextRevealCard } from "@/components/ui/text-reveal-card";
 import { motion } from "motion/react";
 import { LampContainer } from "@/components/ui/lamp-container";
-import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
-import {
-  CONTACT_WORDS_SET,
-  INFINITE_MOVING_CARDS_MAP,
-  INFINITE_MOVING_CARDS_MAP_2
-} from "@/config/home";
 
 export default function Contact() {
-  const wordSets = CONTACT_WORDS_SET;
-  const testimonials = INFINITE_MOVING_CARDS_MAP_2;
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % wordSets.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <>
       <ContactMe />
@@ -58,24 +35,6 @@ export default function Contact() {
           </button>
         </div>
       </LampContainer>
-      <div className="h-[30rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-        {wordSets.map((words, index) => (
-          <div
-            key={index}
-            className={index === currentIndex ? "block" : "hidden"}
-          >
-            <TypewriterEffectSmooth
-              words={words}
-              className="text-2xl text-center mt-20 transition-opacity duration-500"
-            />
-          </div>
-        ))}
-        <InfiniteMovingCards
-          items={testimonials}
-          direction="right"
-          speed="slow"
-        />
-      </div>
     </>
   );
 }
@@ -86,15 +45,7 @@ function ContactMe() {
       <TextRevealCard
         text="You know the business"
         revealText="I know the chemistry "
-      >
-        <TextRevealCardTitle>
-          Sometimes, you just need to see it.
-        </TextRevealCardTitle>
-        <TextRevealCardDescription>
-          This is a text reveal card. Hover over the card to reveal the hidden
-          text.
-        </TextRevealCardDescription>
-      </TextRevealCard>
+      ></TextRevealCard>
     </div>
   );
 }

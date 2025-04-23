@@ -1,5 +1,3 @@
-import { desc } from "motion/react-client";
-
 export const PROJECT_LIST = [
   {
     title: "Podcast AI",
@@ -188,49 +186,6 @@ export const CONTACT_WORDS_SET = [
 ];
 
 export const INFINITE_MOVING_CARDS_MAP = [
-  {
-    question: "Why did the `==` operator break up with `===`?",
-    answer: "Because `==` was too loose."
-  },
-  {
-    question: "Why do JavaScript developers wear glasses?",
-    answer: "Because they don't C#."
-  },
-  {
-    question: "What did JavaScript say to Java?",
-    answer: "Absolutely nothing. They don't speak the same language."
-  },
-  {
-    question: "Why was the JavaScript file always late?",
-    answer: "Because it kept getting callbacked."
-  },
-  {
-    question: "What’s the object-oriented way to become wealthy?",
-    answer: "Inheritance."
-  },
-  {
-    question: "Why can’t you trust JavaScript developers?",
-    answer: "Because they’re always undefined."
-  },
-  {
-    question: "How do you comfort a JavaScript bug?",
-    answer: "You console.log it until it feels better."
-  },
-  {
-    question: "Why did the async function fail at school?",
-    answer: "Because it never returned anything."
-  },
-  {
-    question: "I used to think NaN was a number...",
-    answer: "Then I tried comparing it to itself."
-  },
-  {
-    question: "Why do JavaScript devs never get lost?",
-    answer: "Because they always follow the callback."
-  }
-];
-
-export const INFINITE_MOVING_CARDS_MAP_2 = [
   {
     question: "Talk is cheap. Show me the code.",
     answer: "Linus Torvalds"
