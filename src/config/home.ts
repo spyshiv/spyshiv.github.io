@@ -208,7 +208,7 @@ export const PROJECT_LIST = [
         className: "h-6 w-6"
       },
       {
-        src: "/skills/Vuejs.svg",
+        src: "/skills/vuejs.svg",
         alt: "Vue",
         containerClassName: "circle-3",
         className: "h-8 w-8"
