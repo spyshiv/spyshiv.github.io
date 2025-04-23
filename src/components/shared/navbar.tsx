@@ -38,7 +38,7 @@ export function NavbarMenu() {
     <Navbar>
       {/* Desktop Navigation */}
       <NavBody>
-        <NavbarLogo path="./../logo.svg" name="Shiv Baran Singh" />
+        <NavbarLogo path="./../profile.png" name="Shiv Baran Singh" />
         <NavItems items={navItems} />
         <div className="flex items-center gap-4">
           <NavbarButton
@@ -54,7 +54,7 @@ export function NavbarMenu() {
       {/* Mobile Navigation */}
       <MobileNav>
         <MobileNavHeader>
-          <NavbarLogo path="./../logo.svg" name="Shiv Baran Singh" />
+          <NavbarLogo path="./../profile.png" name="Shiv Baran Singh" />
           <MobileNavToggle
             isOpen={isMobileMenuOpen}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

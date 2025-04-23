@@ -5,91 +5,91 @@ const skills = {
   Frontend: [
     {
       name: "JavaScript",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+      icon: "./../skills/javascript.svg"
     },
     {
       name: "TypeScript",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+      icon: "./../skills/typescript.svg"
     },
     {
       name: "Reactjs",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+      icon: "./../skills/react.svg"
     },
     {
       name: "Vuejs",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg"
+      icon: "./../skills/vuejs.svg"
     },
     {
       name: "Nextjs",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+      icon: "./../skills/nextjs.svg"
     },
     {
       name: "Sass",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"
+      icon: "./../skills/sass.svg"
     },
     {
       name: "Tailwind",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+      icon: "./../skills/tailwindcss.svg"
     }
   ],
   "Backend & DevOps": [
     {
       name: "Nodejs",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
+      icon: "./../skills/nodejs.svg"
     },
     {
       name: "Python",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+      icon: "./../skills/python.svg"
     },
     {
       name: "Django Rest",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/djangorest/djangorest-original.svg"
+      icon: "./../skills/djangorest.svg"
     },
     {
       name: "PostgreSQL",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+      icon: "./../skills/postgresql.svg"
     },
     {
       name: "AWS",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+      icon: "./../skills/aws.svg"
     },
     {
       name: "Docker",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+      icon: "./../skills/docker.svg"
     },
     {
       name: "Jenkins",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg"
+      icon: "./../skills/jenkins.svg"
     }
   ],
   Tools: [
     {
       name: "Git",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+      icon: "./../skills/git.svg"
     },
     {
       name: "NPM",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg"
+      icon: "./../skills/npm.svg"
     },
     {
       name: "vite",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
+      icon: "./../skills/vite.svg"
     },
     {
       name: "Nginx",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg"
+      icon: "./../skills/nginx.svg"
     },
     {
       name: "Jira",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg"
+      icon: "./../skills/jira.svg"
     },
     {
       name: "VsCode",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
+      icon: "./../skills/vscode.svg"
     },
     {
       name: "Figma",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+      icon: "./../skills/figma.svg"
     }
   ]
 };
