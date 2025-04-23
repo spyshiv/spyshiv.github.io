@@ -1,51 +1,84 @@
 "use client";
 import React from "react";
-import { TextRevealCard } from "@/components/ui/text-reveal-card";
-import { motion } from "motion/react";
-import { LampContainer } from "@/components/ui/lamp-container";
+import { PinContainer } from "@/components/ui/3d-pin";
+import {
+  IconBrandGithub,
+  IconBrandLeetcode,
+  IconBrandLinkedin,
+  IconMail
+} from "@tabler/icons-react";
+
+const socialLinks = [
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/shivbaran1",
+    icon: (
+      <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    )
+  },
+  {
+    name: "LeetCode",
+    url: "https://leetcode.com/spyshiv",
+    icon: (
+      <IconBrandLeetcode className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    )
+  },
+  {
+    name: "GitHub",
+    url: "https://github.com/spyshiv",
+    icon: (
+      <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    )
+  },
+  {
+    name: "Gmail",
+    url: "mailto:spyshiv@gmail.com",
+    icon: (
+      <IconMail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    )
+  }
+];
 
 export default function Contact() {
   return (
-    <>
-      <ContactMe />
-      <LampContainer>
-        <motion.h1
-          initial={{ opacity: 0.5, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{
-            delay: 0.3,
-            duration: 0.8,
-            ease: "easeInOut"
-          }}
-          className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-2xl font-medium tracking-tight text-transparent md:text-3xl"
-        >
-          Lets Work Together
-        </motion.h1>
-        <p className="text-center py-4 my-10 relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-4xl font-bold text-transparent sm:text-4xl">
-          Contact Me
-        </p>
-        <div className="flex gap-4 my-8">
-          <button className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm">
-            <a href="mailto:spyshiv@gmail.com">spyshiv@gmail.com</a>
-          </button>
-          <button className="w-40 h-10 rounded-xl bg-white text-black border border-black  text-sm">
-            <a href="./../shiv-resume-2025.pdf" target="_blank">
-              Download Resume
-            </a>
-          </button>
-        </div>
-      </LampContainer>
-    </>
-  );
-}
+    <div className="py-30 flex flex-col items-center">
+      <p className="text-center py-4 relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-4xl font-bold text-transparent sm:text-4xl">
+        🌟 Let’s Connect!
+      </p>
+      <div className="max-w-5xl pt-4 pb-10 text-center relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-xl font-bold text-transparent sm:text-xl">
+        If you’re looking to collaborate, build something awesome, or just talk
+        tech, I’d love to hear from you! Whether it’s about frontend frameworks,
+        AI projects, or startup ideas—I’m always excited to connect with
+        passionate minds.
+      </div>
 
-function ContactMe() {
-  return (
-    <div className="flex items-center justify-center bg-[#0E0E10] h-[40rem] rounded-2xl w-full">
-      <TextRevealCard
-        text="You know the business"
-        revealText="I know the chemistry "
-      ></TextRevealCard>
+      <div className="flex flex-wrap justify-center gap-4 px-10">
+        {socialLinks.map(({ name, url, icon }) => (
+          <div className="my-10" key={name}>
+            <PinContainer title={name} href={url}>
+              <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[10rem] h-[10rem] ">
+                <h3 className="max-w-xs !pb-2 !m-0 font-bold text-base text-black dark:text-slate-100 text-center">
+                  {name}
+                </h3>
+                {icon}
+              </div>
+            </PinContainer>
+          </div>
+        ))}
+      </div>
+
+      <div className="mt-12 text-center">
+        <p className="italic mb-2 text-neutral-800 dark:text-neutral-200">
+          "Great things in business are never done by one person. They’re done
+          by a team of people."
+        </p>
+        <p className="font-semibold text-neutral-800 dark:text-neutral-200">
+          — Steve Jobs
+        </p>
+        <p className="mt-4 text-neutral-800 dark:text-neutral-200">
+          Let’s build, learn, and grow—together. 🙌
+        </p>
+      </div>
     </div>
   );
 }
