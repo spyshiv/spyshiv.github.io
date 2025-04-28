@@ -345,7 +345,7 @@ export const PROJECT_LIST = [
     title: "Swinguff",
     description:
       "Swinguff is a social music app allowing users to share songs, like statuses, and connect with friends.",
-    link: "http://goo.gl/9B8ZFA",
+    link: "https://www.f6s.com/company/swinguff",
     images: [
       {
         src: "/skills/jenkins.svg",
