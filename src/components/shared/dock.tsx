@@ -2,11 +2,19 @@ import { FloatingDock } from "@/components/ui/floating-dock";
 import {
   IconBrandGithub,
   IconBrandLeetcode,
-  IconBrandLinkedin
+  IconBrandLinkedin,
+  IconMail
 } from "@tabler/icons-react";
 
 export function Dock() {
   const links = [
+    {
+      title: "Gmail",
+      icon: (
+        <IconMail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "mailto:spyshiv@gmail.com"
+    },
     {
       title: "Leetcode",
       icon: (

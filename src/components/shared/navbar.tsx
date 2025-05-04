@@ -45,6 +45,7 @@ export function NavbarMenu() {
             variant="primary"
             href="./../shiv-resume-2025.pdf"
             target="_blank"
+            download="ShivBaranSingh_Principal_Developer_2025.pdf"
           >
             Resume
           </NavbarButton>
@@ -80,6 +81,7 @@ export function NavbarMenu() {
               variant="primary"
               href="./../shiv-resume-2025.pdf"
               target="_blank"
+              download="ShivBaranSingh_Principal_Developer_2025.pdf"
             >
               Resume
             </NavbarButton>
