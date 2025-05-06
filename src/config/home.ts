@@ -204,14 +204,14 @@ export const PROJECT_LIST = [
       {
         src: "/skills/typescript.svg",
         alt: "Typescript",
-        containerClassName: "h-8 w-8 circle-5",
-        className: "h-4 w-4"
+        containerClassName: "h-12 w-12 circle-2",
+        className: "h-6 w-6"
       },
       {
         src: "/skills/react.svg",
         alt: "React",
-        containerClassName: "h-12 w-12 circle-2",
-        className: "h-6 w-6"
+        containerClassName: "circle-3",
+        className: "h-8 w-8"
       },
       {
         src: "/skills/tailwindcss.svg",
@@ -222,7 +222,7 @@ export const PROJECT_LIST = [
       {
         src: "/skills/vite.svg",
         alt: "Vite",
-        containerClassName: "h-8 w-8 circle-1",
+        containerClassName: "h-8 w-8 circle-5",
         className: "h-4 w-4"
       }
     ]
