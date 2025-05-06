@@ -152,6 +152,82 @@ export const PROJECT_LIST = [
     ]
   },
   {
+    title: "Huex Lab (Color Utility)",
+    description:
+      "Huex Lab transforms how designers and developers work with color. Generate perfect palettes, ensure accessibility, and streamline workflows with our intelligent color tools.",
+    link: "https://huexlab.vercel.app/",
+    images: [
+      {
+        src: "/skills/typescript.svg",
+        alt: "Typescript",
+        containerClassName: "h-8 w-8 circle-1",
+        className: "h-4 w-4"
+      },
+      {
+        src: "/skills/gemini.svg",
+        alt: "Gemini",
+        containerClassName: "h-12 w-12 circle-2",
+        className: "h-6 w-6"
+      },
+      {
+        src: "/skills/react.svg",
+        alt: "React",
+        containerClassName: "circle-3",
+        className: "h-8 w-8"
+      },
+      {
+        src: "/skills/aws.svg",
+        alt: "AWS",
+        containerClassName: "h-12 w-12 circle-4",
+        className: "h-6 w-6"
+      },
+      {
+        src: "/skills/jenkins.svg",
+        alt: "Jenkins",
+        containerClassName: "h-8 w-8 circle-5",
+        className: "h-4 w-4"
+      }
+    ]
+  },
+  {
+    title: "Markdown Studio",
+    description:
+      "Write, preview, and convert HTML/Markdown instantly—plus a cheat sheet for quick reference. The smarter way to work in Markdown.",
+    link: "https://markdown-studio.vercel.app/",
+    images: [
+      {
+        src: "/skills/git.svg",
+        alt: "Git",
+        containerClassName: "h-8 w-8 circle-1",
+        className: "h-4 w-4"
+      },
+      {
+        src: "/skills/typescript.svg",
+        alt: "Typescript",
+        containerClassName: "h-8 w-8 circle-5",
+        className: "h-4 w-4"
+      },
+      {
+        src: "/skills/react.svg",
+        alt: "React",
+        containerClassName: "h-12 w-12 circle-2",
+        className: "h-6 w-6"
+      },
+      {
+        src: "/skills/tailwindcss.svg",
+        alt: "Tailwind CSS",
+        containerClassName: "h-12 w-12 circle-4",
+        className: "h-6 w-6"
+      },
+      {
+        src: "/skills/vite.svg",
+        alt: "Vite",
+        containerClassName: "h-8 w-8 circle-1",
+        className: "h-4 w-4"
+      }
+    ]
+  },
+  {
     title: "Google Login Vue3",
     description:
       "A lightweight and customizable Vue 3 component for Google OAuth 2.0 authentication supporting both JWT-based and Authorization Code-based flows.",
@@ -380,48 +456,10 @@ export const PROJECT_LIST = [
     ]
   },
   {
-    title: "Color Palette Generator",
-    description:
-      "A web application that generates color palettes based on user input, allowing users to create and save their own color combinations.",
-    link: "https://color-palette-generator.vercel.app/",
-    images: [
-      {
-        src: "/skills/typescript.svg",
-        alt: "Typescript",
-        containerClassName: "h-8 w-8 circle-1",
-        className: "h-4 w-4"
-      },
-      {
-        src: "/skills/gemini.svg",
-        alt: "Gemini",
-        containerClassName: "h-12 w-12 circle-2",
-        className: "h-6 w-6"
-      },
-      {
-        src: "/skills/react.svg",
-        alt: "React",
-        containerClassName: "circle-3",
-        className: "h-8 w-8"
-      },
-      {
-        src: "/skills/aws.svg",
-        alt: "AWS",
-        containerClassName: "h-12 w-12 circle-4",
-        className: "h-6 w-6"
-      },
-      {
-        src: "/skills/jenkins.svg",
-        alt: "Jenkins",
-        containerClassName: "h-8 w-8 circle-5",
-        className: "h-4 w-4"
-      }
-    ]
-  },
-  {
     title: "My Portfolio",
     description:
       "A personal portfolio website showcasing my projects, skills, and experience in web development.",
-    link: "https://shivbaran.com/",
+    link: "https://spyshiv-github-io.vercel.app/",
     images: [
       {
         src: "/skills/git.svg",
