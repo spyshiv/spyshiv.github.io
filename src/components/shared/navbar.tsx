@@ -43,7 +43,7 @@ export function NavbarMenu() {
         <div className="flex items-center gap-4">
           <NavbarButton
             variant="primary"
-            href="./../ShivBaranSingh_Principal_Developer_2025.pdf"
+            href="./../ShivBaranSingh_Principal_Frontend_Developer_2025.pdf"
             target="_blank"
             download
           >
@@ -79,7 +79,7 @@ export function NavbarMenu() {
           <div className="flex w-full flex-col gap-4">
             <NavbarButton
               variant="primary"
-              href="./../ShivBaranSingh_Principal_Developer_2025.pdf"
+              href="./../ShivBaranSingh_Principal_Frontend_Developer_2025.pdf"
               target="_blank"
               download
             >

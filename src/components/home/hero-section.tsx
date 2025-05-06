@@ -35,7 +35,7 @@ export default function Hero() {
         </p>
         <div className="text-center">
           <a
-            href="./../ShivBaranSingh_Principal_Developer_2025.pdf"
+            href="./../ShivBaranSingh_Principal_Frontend_Developer_2025.pdf"
             target="_blank"
             download
           >
