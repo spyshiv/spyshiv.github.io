@@ -4,11 +4,11 @@ const projects = PROJECT_LIST.slice(0, 3);
 
 export default function Projects() {
   return (
-    <div className="h-[50rem] flex flex-col justify-center max-w-5xl mx-auto px-8">
-      <p className="text-center py-4 relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-4xl font-bold text-transparent sm:text-4xl">
+    <div className="md:h-[50rem] h-auto flex flex-col justify-center max-w-5xl mx-auto md:px-8 px-4 py-20">
+      <p className="text-center py-4 relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text md:text-4xl text-3xl font-bold text-transparent sm:text-4xl">
         Projects
       </p>
-      <p className="pt-4 text-center relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-xl font-bold text-transparent sm:text-xl">
+      <p className="pt-4 text-center relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text md:text-xl text-md font-bold text-transparent sm:text-xl">
         Driven by a passion for creating innovative web experiences, I've built
         a variety of projects showcased below. These demonstrate my hands-on
         experience with modern frontend frameworks (React, Next.js, Vue.js), my

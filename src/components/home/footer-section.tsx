@@ -4,13 +4,13 @@ import { Boxes } from "@/components/ui/background-boxes";
 
 export default function About() {
   return (
-    <div className="h-[50rem] relative w-full overflow-hidden bg-slate-900 flex flex-col items-center justify-center rounded-lg">
+    <div className="md:h-[50rem] py-20 px-5 relative w-full overflow-hidden bg-slate-900 flex flex-col items-center justify-center rounded-lg">
       <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
       <Boxes />
-      <p className="text-center py-4 relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-4xl font-bold text-transparent sm:text-4xl">
+      <p className="text-center py-4 relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text md:text-4xl text-3xl font-bold text-transparent sm:text-4xl">
         About Me
       </p>
-      <p className="max-w-5xl pt-4 text-center relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-xl font-bold text-transparent sm:text-xl">
+      <p className="max-w-5xl pt-4 text-center relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text md:text-xl text-md font-bold text-transparent sm:text-xl">
         Hello! I'm Shiv Baran Singh, a Frontend Developer passionate about
         building modern, performant, and intuitive web applications. With over 8
         years of experience, my specialization lies in Vue 3, React, and

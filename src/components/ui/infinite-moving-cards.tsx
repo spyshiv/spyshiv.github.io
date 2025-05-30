@@ -94,10 +94,10 @@ export const InfiniteMovingCards = ({
                 aria-hidden="true"
                 className="user-select-none pointer-events-none absolute -top-0.5 -left-0.5 -z-1 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              <div className="relative z-20 text-lg leading-[1.6] font-normal text-neutral-800 dark:text-gray-100 text-bold">
+              <div className="relative z-20 md:text-lg text-md leading-[1.6] font-normal text-neutral-800 dark:text-gray-100 text-bold">
                 {item.question}
               </div>
-              <div className="mt-4 text-md leading-[1.6] font-normal text-neutral-500 dark:text-gray-400 text-right">
+              <div className="mt-4 md:text-md text-sm leading-[1.6] font-normal text-neutral-500 dark:text-gray-400 text-right">
                 -- {item.answer}
               </div>
             </blockquote>

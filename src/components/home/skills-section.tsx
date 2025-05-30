@@ -96,32 +96,44 @@ const skills = {
 
 export default function Skills() {
   return (
-    <BackgroundBeamsWithCollision className="h-[60rem]">
+    <BackgroundBeamsWithCollision className="md:h-[60rem] h-screen pb-10 px-4">
       <div className="py-20">
-        <p className="text-center py-4 my-10 relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-4xl font-bold text-transparent sm:text-4xl">
+        <p className="text-center py-4 my-10 relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text md:text-4xl text-3xl font-bold text-transparent sm:text-4xl">
           Skills
         </p>
         {Object.entries(skills).map(([category, items]) => (
           <div key={category} className="mb-12">
-            <h3 className="text-xl dark:text-white text-black font-bold mb-6 text-center underline decoration-blue-500 decoration-2 underline-offset-10">
+            <h3 className="md:text-xl text-md dark:text-white text-black font-bold mb-6 text-center underline decoration-blue-500 decoration-2 underline-offset-10">
               {category}
             </h3>
-            <div className="flex flex-wrap items-center justify-center gap-8">
+            <div className="flex flex-wrap items-center justify-center gap-6 block md:hidden">
               {items.map((skill) => (
-                <GlareCard
-                  key={skill.name}
-                  className="flex flex-col items-center justify-center"
-                >
-                  <img
-                    src={skill.icon}
-                    alt={skill.name}
-                    className="h-10 w-10"
-                  />
-                  <p className="text-white font-bold text-md mt-4">
+                <div key={skill.name} className="flex flex-col items-center">
+                  <img src={skill.icon} alt={skill.name} className="h-5 w-5" />
+                  <p className="text-white font-bold text-xs mt-4">
                     {skill.name}
                   </p>
-                </GlareCard>
+                </div>
               ))}
+            </div>
+            <div className="hidden md:block">
+              <div className="flex flex-wrap items-center justify-center gap-8">
+                {items.map((skill) => (
+                  <GlareCard
+                    key={skill.name}
+                    className="flex flex-col items-center justify-center"
+                  >
+                    <img
+                      src={skill.icon}
+                      alt={skill.name}
+                      className="h-10 w-10"
+                    />
+                    <p className="text-white font-bold text-md mt-4">
+                      {skill.name}
+                    </p>
+                  </GlareCard>
+                ))}
+              </div>
             </div>
           </div>
         ))}
