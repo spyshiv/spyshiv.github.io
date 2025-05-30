@@ -5,7 +5,7 @@ import { ColourfulText } from "@/components/ui/colourful-text";
 
 export default function Hero() {
   return (
-    <div className="relative flex h-[50rem] w-full items-center justify-center bg-white dark:bg-black">
+    <div className="relative flex md:h-[50rem] h-screen w-full items-center justify-center bg-white dark:bg-black">
       <div
         className={cn(
           "absolute inset-0",
@@ -15,15 +15,15 @@ export default function Hero() {
         )}
       />
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
-      <div className="px-5 w-[70%]">
-        <p className="text-center relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text pt-8 text-4xl font-bold text-transparent sm:text-7xl">
+      <div className="px-5 md:w-[70%]">
+        <p className="text-center relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text pt-8 md:text-4xl text-3xl font-bold text-transparent sm:text-7xl">
           Shiv Baran Singh
         </p>
-        <p className="text-center pt-4 relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-2xl font-bold text-transparent sm:text-2xl">
+        <p className="text-center pt-4 relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text md:text-2xl text-xl font-bold text-transparent sm:text-2xl">
           <ColourfulText text="Frontend Developer" /> | React.js | Next.js |
           Vue.js | Node.js
         </p>
-        <p className="pt-4 text-center relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-xl font-bold text-transparent sm:text-xl">
+        <p className="pt-4 text-center relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text md:text-xl text-md font-bold text-transparent sm:text-xl">
           As a seasoned Frontend Developer with over 8 years of experience, I
           create scalable and high-performance web applications using
           technologies such as React.js, Next.js, Vue.js, and Node.js. My
