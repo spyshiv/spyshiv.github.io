@@ -52,20 +52,20 @@ export default function About() {
     title: item.title,
     content: (
       <div>
-        <div className="font-bold text-xl md:text-2xl mb-4 text-neutral-500 dark:text-neutral-500">
+        <div className="font-bold text-lg md:text-2xl mb-4 text-neutral-500 dark:text-neutral-500">
           {item.content.title}
         </div>
         <p className="mb-8 font-normal text-md md:text-lg text-neutral-800 dark:text-neutral-200">
           {item.content.description}
         </p>
         <div className="mb-8">
-          <h2 className="text-lg md:text-xl font-bold text-neutral-500 dark:text-neutral-500">
+          <h2 className="text-md md:text-xl font-bold text-neutral-500 dark:text-neutral-500">
             Skills & Tools Used:
           </h2>
           <p className="mt-3 text-md md:text-lg">{item.content.skills}</p>
         </div>
         <div className="pb-10">
-          <h2 className="text-lg md:text-xl font-bold text-neutral-500 dark:text-neutral-500">
+          <h2 className="text-md md:text-xl font-bold text-neutral-500 dark:text-neutral-500">
             Key Highlights
           </h2>
           <ul className="list-disc mt-3 text-md md:text-lg text-neutral-800 dark:text-neutral-200">
