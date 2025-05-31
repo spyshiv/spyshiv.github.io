@@ -41,11 +41,11 @@ const socialLinks = [
 
 export default function Contact() {
   return (
-    <div className="py-30 flex flex-col items-center">
-      <p className="text-center py-4 relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-4xl font-bold text-transparent sm:text-4xl">
+    <div className="py-30 flex flex-col items-center px-4">
+      <p className="text-center py-4 relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text md:text-4xl text-3xl font-bold text-transparent sm:text-4xl">
         🌟 Let’s Connect!
       </p>
-      <div className="max-w-5xl pt-4 pb-10 text-center relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-xl font-bold text-transparent sm:text-xl">
+      <div className="max-w-5xl pt-4 pb-10 text-center relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text md:text-xl text-md font-bold text-transparent sm:text-xl">
         If you’re looking to collaborate, build something awesome, or just talk
         tech, I’d love to hear from you! Whether it’s about frontend frameworks,
         AI projects, or startup ideas—I’m always excited to connect with
