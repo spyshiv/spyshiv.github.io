@@ -1,10 +1,59 @@
 ---
-layout: default
+layout: landing
+title: spyshiv — A little hello
+description: Welcome to spyshiv's personal space. Explore my portfolio or get in touch.
 ---
 
+<a class="skip-link" href="#main">Skip to content</a>
 
-<div>
-    <h5><span id="hofhi">Hi,</span></h5>
-    <p>This site is under maintenance</p>
-    <p>contact me at spyshiv@gmail.com</p>
+<div class="landing-shell">
+  <header class="landing-header">
+    <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="spyshiv home">
+      <span class="brand-mark" aria-hidden="true">s.</span>
+      <span>spyshiv<span class="wordmark-dot" aria-hidden="true">.</span></span>
+    </a>
+    <nav class="landing-nav" aria-label="Main navigation">
+      <a href="https://spyshiv-github-io.vercel.app/">Portfolio <span aria-hidden="true">↗</span></a>
+      <a href="mailto:spyshiv@gmail.com">Say hello <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main class="landing-main" id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="welcome-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="hello-dot" aria-hidden="true"></span> A personal corner of the internet</p>
+        <h1 id="welcome-title">A little hello.<br>A closer <em>look.</em></h1>
+        <p class="hero-intro">I’m <strong>spyshiv.</strong> Welcome to my personal space.<br class="desktop-break"> Take a look around my portfolio, or drop me a line.</p>
+        <div class="hero-actions">
+          <a class="portfolio-button" href="https://spyshiv-github-io.vercel.app/">View portfolio <span aria-hidden="true">↗</span></a>
+          <a class="contact-link" href="mailto:spyshiv@gmail.com">Let’s talk <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="hero-note">A new perspective is just a click away.</p>
+      </div>
+
+      <a class="portfolio-card" href="https://spyshiv-github-io.vercel.app/" aria-labelledby="portfolio-title portfolio-caption">
+        <div class="card-top">
+          <span class="card-label">The next stop</span>
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="orbit-art" aria-hidden="true">
+          <div class="orbit orbit-outer"></div>
+          <div class="orbit orbit-inner"></div>
+          <span class="orbit-dot"></span>
+          <span class="orbit-star">✳</span>
+          <span class="orbit-monogram">s.</span>
+        </div>
+        <div class="card-bottom">
+          <h2 id="portfolio-title">My portfolio</h2>
+          <p id="portfolio-caption">Step inside. Get to know my work.</p>
+        </div>
+      </a>
+    </section>
+  </main>
+
+  <footer class="landing-footer">
+    <p>A little curiosity goes a long way.</p>
+    <a href="mailto:spyshiv@gmail.com">spyshiv@gmail.com <span aria-hidden="true">↗</span></a>
+    <span class="footer-signoff">Thanks for stopping by <span aria-hidden="true">✳</span></span>
+  </footer>
 </div>
